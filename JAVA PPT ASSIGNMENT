@@ -1,1 +1,77 @@
-Assignment file
+Assignment no.4
+Q.NO1>Write a program to show Interface Example in java?
+Ans:-
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+
+class Lion implements Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The lion roars");
+  }
+  public void sleep() {
+   
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Lion myLion= new Lion();  
+    myLion.animalSound();
+    myLion.sleep();
+  }
+}
+
+QNO.2>Q2.Write a program a Program with 2 concrete method and 2 abstract method in java ?
+ANS:-
+
+QN0.3>Q3.Write a program  to show the use of functional interface in java?
+interface Sample{
+    int calculate(int val);
+}
+// public class
+public class Main{
+    public static void main(String[] args){
+        
+     
+        Sample solution = (int val) -> val+55;
+         
+        System.out.println("Ans = "+ solution.calculate(55));
+    }
+
+Q.NO>4 .What is an interface in Java?
+ANS:-1>Interfaces in Java are a set of abstract and public methods we want our classes to implement. It is the blueprint of a class and contains static constants and abstract methods.
+Interfaces are used to achieve abstraction and implement multiple inherita
+2>An interface is a set of abstract methods you would want your class to implement. These methods are public and abstract by default(you don’t have to explicitly use the “abstract” keyword),
+and any class implementing your interface will need to provide implementations of those methods.
+3>EG::interface CakeBakingService{
+ public void mixIngredients();
+ public void bakeCake();
+ public void frostCake();
+}
+
+
+QNO:-5
+What is the use of interface in Java?
+...This are the some reason to use the interface
+ANS:-1..Abstraction is achieved using an Interface in Java.
+2..To achieve loose coupling.
+3..Supports the functionality of multiple inheritances in Java.
+4..The same signature must be used when overriding interface methods.
+5..Interface methods must be implemented in classes that are not abstract.
+6..Zero, one, or more interfaces can be implemented by a class at a time.
+7..An interface in Java can extend another interface just like a class extends another class.
+
+
+
+ Q.NO..What is the lambda expression of Java 8
+A lambda expression is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods,
+but they do not need a name and they can be implemented right in the body of a method.
+
+Syntax
+The simplest lambda expression contains a single parameter and an expression:
+parameter -> expression
